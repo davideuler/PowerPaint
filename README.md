@@ -88,7 +88,7 @@ For the BrushNet-based PowerPaint, you can run the following command:
 ```bash
 # Clone PowerPaint Model
 git clone https://huggingface.co/JunhaoZhuang/PowerPaint_v2/ ./checkpoints/ppt-v2
-ln -sf `pwd`/checkpoints/ppt-v2/realisticVisionV60B1_v51VAE/unet/diffusion_pytorch_model-002.safetensors checkpoints/ppt-v2/realisticVisionV60B1_v51VAE/unet/diffusion_pytorch_model.safetensors
+ln -sf `pwd`/checkpoints/ppt-v2/realisticVisionV60B1_v51VAE/unet/diffusion_pytorch_model-002.bin checkpoints/ppt-v2/realisticVisionV60B1_v51VAE/unet/diffusion_pytorch_model.bin
 
 python app.py --version ppt-v2 --checkpoint_dir checkpoints/ppt-v2 --local_files_only
 ```
